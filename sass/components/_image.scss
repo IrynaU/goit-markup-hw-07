@@ -1,0 +1,8 @@
+.image-picture:not(:last-child) {
+    margin-right: 30px;
+  } 
+  
+  .image-picture {
+    position: relative;
+    overflow: hidden;
+  }
