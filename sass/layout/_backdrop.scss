@@ -10,10 +10,10 @@
     visibility: visible;
     pointer-events: auto;
     transition: opacity 250ms ease, visibility 250ms ease;
-  }
-
-  .backdrop.is-hidden {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
+    
+    &.is-hidden {
+      visibility: hidden;
+      opacity: 0;
+      pointer-events: none;
+    }
   }

@@ -14,15 +14,14 @@
     color: var(--icon-color);
     transition: color var(--transition-dur-and-func);
     transition: border-color var(--transition-dur-and-func);
-  }
-  
-  
-  .clients-icon-box:hover,
-  .clients-icon-box:focus {
-    color: var(--secondary-text-color-theme-light);
-    border-color: var(--secondary-text-color-theme-light);
-    transition: color var(--transition-dur-and-func), 
-    border-color var(--transition-dur-and-func);
+    
+      &:hover,
+      &:focus {
+        color: var(--secondary-text-color-theme-light);
+        border-color: var(--secondary-text-color-theme-light);
+        transition: color var(--transition-dur-and-func), 
+        border-color var(--transition-dur-and-func);
+     }
   }
   
   

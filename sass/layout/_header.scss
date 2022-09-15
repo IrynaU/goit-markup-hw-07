@@ -78,14 +78,16 @@
   display: inline-block;
   padding-bottom: 32px;
   padding-top: 32px;
-  }
-  
-  
-  
-  .menu-link:hover,
-  .menu-link:focus {
+
+    &:hover,
+    &:focus {
     color: var(--secondary-text-color-theme-light);
+    }
   }
+  
+  
+  
+  
   
   .menu-link.current::after {
     content:"";

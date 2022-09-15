@@ -18,12 +18,14 @@
     display: flex;
   }
   
-  .about-work-title:not(:last-child) {
-    margin-right: 30px;
-  }
+  
   
   .about-work-title {
     width: 270px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
   
   

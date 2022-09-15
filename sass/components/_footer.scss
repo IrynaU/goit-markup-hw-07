@@ -13,11 +13,7 @@
   
   
   
-  /* 
-  .footer-sociale-list {
-    padding-top: 79px;
-    padding-bottom: 100px;
-  } */
+ 
   
   .address {
     font-style: normal;
@@ -53,9 +49,7 @@
     margin-bottom: 9px;
   }
   
-  /* .footer-sociale-page-box {
-    margin-left: 70px;
-  } */
+ 
   
   
   
@@ -95,11 +89,11 @@
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
     transition: background-color var(--transition-dur-and-func);
-  }
-  
-  .social-list-link-footer:hover,
-  .social-list-link-footer:focus {
-    background-color: var(--secondary-text-color-theme-light);
+   
+      &:hover,
+      &:focus {
+        background-color: var(--secondary-text-color-theme-light);
+      }
   }
   
   .social-list-link-footer:hover .social-list-icon-footer,
