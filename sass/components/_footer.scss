@@ -72,6 +72,11 @@
     fill: var(--primary-text-color);
     transition: fill var(--transition-dur-and-func);
     transition-timing-function: var(--transition-timing); 
+    
+    .social-list-link-footer:hover &,
+    .social-list-link-footer:focus & {
+      fill: var(--primary-text-color);
+   }
   }
   
   .social-list-footer {
@@ -96,10 +101,7 @@
       }
   }
   
-  .social-list-link-footer:hover .social-list-icon-footer,
-  .social-list-link-footer:focus .social-list-icon-footer {
-    fill: var(--primary-text-color);
-  }
+  
   
   
   .modal-form-title-footer {

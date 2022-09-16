@@ -1,6 +1,11 @@
 .social-list-icon {
     fill: var(--icon-color);
     transition: fill var(--transition-dur-and-func);
+
+    .social-list-link:hover &,
+    .social-list-link:focus & {
+      fill: var(--primary-text-color);
+    }
   }
   
   .social-list {
@@ -29,7 +34,4 @@
   
   
   
-  .social-list-link:hover .social-list-icon,
-  .social-list-link:focus .social-list-icon {
-    fill: var(--primary-text-color);
-  }
+ 

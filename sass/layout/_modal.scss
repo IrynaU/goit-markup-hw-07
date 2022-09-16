@@ -96,6 +96,10 @@
     left: 12px;
     transform: translateY(-50%);
     transition: fill var(--transition-dur-and-func);
+
+    .modal-form-input:focus + & {
+      fill: var(--secondary-text-color-theme-light);
+     }
   }
   
   .modal-form-input-wrapper {
@@ -103,9 +107,7 @@
     display: block;
   }
   
-  .modal-form-input:focus + .modal-form-input-icon {
-   fill: var(--secondary-text-color-theme-light);
-  }
+  
   
   .modal-form-message {
     display: block;
@@ -121,6 +123,18 @@
         outline: none;
         border-color: var(--secondary-text-color-theme-light);
       }
+
+    &::placeholder {
+   
+        font-style: normal;
+       
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+      }  
+
+      
   }
   
   
@@ -145,15 +159,7 @@
 //     outline: none;
 //   }
   
-  .modal-form-message::placeholder {
-   
-    font-style: normal;
-   
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
-  }
+ 
   
   .modal-form-own-checkbox {
     border: 2px solid #212121;
@@ -161,29 +167,35 @@
     width: 16px;
     height: 15px;
     margin-right: 8.38px;
+
+    .modal-form-check:checked + & {
+      background-color: var(--secondary-text-color-theme-light);
+      border: none;
+      transition: background-color var(--transition-dur-and-func);
+    }
+
+    .modal-form-check:focus + & {
+      border-color: var(--secondary-text-color-theme-light);
+      transition: var(--transition-dur-and-func);
+     }
+    
   }
   
   .modal-form-own-checkbox-icon {
     display: none;
+
+    .modal-form-check:checked + .modal-form-own-checkbox & {
+      display: block;
+    }
     
   }
   
   
   
-  .modal-form-check:checked + .modal-form-own-checkbox {
-    background-color: var(--secondary-text-color-theme-light);
-    border: none;
-    transition: background-color var(--transition-dur-and-func);
-  }
   
-  .modal-form-check:checked + .modal-form-own-checkbox .modal-form-own-checkbox-icon {
-    display: block;
-  }
   
-  .modal-form-check:focus + .modal-form-own-checkbox {
-   border-color: var(--secondary-text-color-theme-light);
-   transition: var(--transition-dur-and-func);
-  }
+  
+  
   
   .modal-form-submit {
    border: none;

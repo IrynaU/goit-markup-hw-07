@@ -147,7 +147,6 @@ ul {
 .menu-link:hover, .menu-link:focus {
   color: var(--secondary-text-color-theme-light);
 }
-
 .menu-link.current::after {
   content: "";
   position: absolute;
@@ -163,7 +162,23 @@ ul {
   color: var(--secondary-text-color-theme-light);
 }
 
-.contact-maill,
+.contact-maill {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color-theme-light);
+  display: flex;
+  align-items: center;
+  transition: color var(--transition-dur-and-func);
+  margin-left: auto;
+  margin-right: 48px;
+}
+.contact-maill:hover, .contact-maill:focus {
+  color: var(--secondary-text-color-theme-light);
+  fill: var(--secondary-text-color-theme-light);
+}
+
 .contact-phone-number {
   font-family: var(--primary-font);
   font-weight: 500;
@@ -174,18 +189,9 @@ ul {
   align-items: center;
   transition: color var(--transition-dur-and-func);
 }
-
-.contact-maill:hover,
-.contact-maill:focus,
-.contact-phone-number:hover,
-.contact-phone-number:focus {
+.contact-phone-number:hover, .contact-phone-number:focus {
   color: var(--secondary-text-color-theme-light);
   fill: var(--secondary-text-color-theme-light);
-}
-
-.contact-maill {
-  margin-left: auto;
-  margin-right: 48px;
 }
 
 .hero {
@@ -456,14 +462,13 @@ ul {
   transform: translateY(-50%);
   transition: fill var(--transition-dur-and-func);
 }
+.modal-form-input:focus + .modal-form-input-icon {
+  fill: var(--secondary-text-color-theme-light);
+}
 
 .modal-form-input-wrapper {
   position: relative;
   display: block;
-}
-
-.modal-form-input:focus + .modal-form-input-icon {
-  fill: var(--secondary-text-color-theme-light);
 }
 
 .modal-form-message {
@@ -480,6 +485,13 @@ ul {
   outline: none;
   border-color: var(--secondary-text-color-theme-light);
 }
+.modal-form-message::placeholder {
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
 
 .modal-form-check {
   position: absolute;
@@ -494,14 +506,6 @@ ul {
   justify-content: center;
 }
 
-.modal-form-message::placeholder {
-  font-style: normal;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-
 .modal-form-own-checkbox {
   border: 2px solid #212121;
   border-radius: 2px;
@@ -509,24 +513,21 @@ ul {
   height: 15px;
   margin-right: 8.38px;
 }
-
-.modal-form-own-checkbox-icon {
-  display: none;
-}
-
 .modal-form-check:checked + .modal-form-own-checkbox {
   background-color: var(--secondary-text-color-theme-light);
   border: none;
   transition: background-color var(--transition-dur-and-func);
 }
-
-.modal-form-check:checked + .modal-form-own-checkbox .modal-form-own-checkbox-icon {
-  display: block;
-}
-
 .modal-form-check:focus + .modal-form-own-checkbox {
   border-color: var(--secondary-text-color-theme-light);
   transition: var(--transition-dur-and-func);
+}
+
+.modal-form-own-checkbox-icon {
+  display: none;
+}
+.modal-form-check:checked + .modal-form-own-checkbox .modal-form-own-checkbox-icon {
+  display: block;
 }
 
 .modal-form-submit {
@@ -580,9 +581,6 @@ ul {
   border-radius: 4px;
   margin: auto;
   margin-top: 30px;
-}
-
-.modal-open-btn {
   border: none;
   width: 216px;
   height: 50px;
@@ -677,6 +675,9 @@ ul {
   fill: var(--icon-color);
   transition: fill var(--transition-dur-and-func);
 }
+.social-list-link:hover .social-list-icon, .social-list-link:focus .social-list-icon {
+  fill: var(--primary-text-color);
+}
 
 .social-list {
   display: flex;
@@ -696,11 +697,6 @@ ul {
 }
 .social-list-link:hover, .social-list-link:focus {
   background-color: var(--secondary-text-color-theme-light);
-}
-
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
-  fill: var(--primary-text-color);
 }
 
 .clients-box {
@@ -790,6 +786,9 @@ ul {
   transition: fill var(--transition-dur-and-func);
   transition-timing-function: var(--transition-timing);
 }
+.social-list-link-footer:hover .social-list-icon-footer, .social-list-link-footer:focus .social-list-icon-footer {
+  fill: var(--primary-text-color);
+}
 
 .social-list-footer {
   display: flex;
@@ -809,11 +808,6 @@ ul {
 }
 .social-list-link-footer:hover, .social-list-link-footer:focus {
   background-color: var(--secondary-text-color-theme-light);
-}
-
-.social-list-link-footer:hover .social-list-icon-footer,
-.social-list-link-footer:focus .social-list-icon-footer {
-  fill: var(--primary-text-color);
 }
 
 .modal-form-title-footer {
