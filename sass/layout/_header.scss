@@ -13,6 +13,28 @@
     align-items: center;
     justify-content: space-between; 
   }
+
+  .logo {
+    
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    
+  }
+
+  .page-navigation-logo {
+    margin-right: 95px;
+  }
+
+  .accent {
+    color: var(--secondary-text-color-theme-light);
+  }
+
+  .logo_color_deark {
+    color: var(--night-color);
+  }
+  
   
   .envelope-maill {
     width: 16px;
@@ -57,17 +79,14 @@
   
   
   
-  .accent {
-    color: var(--secondary-text-color-theme-light);
-  }
   
   
   
-  .menu-item:not(:last-child) {
+  .menu__item:not(:last-child) {
     margin-right: 50px;
   }
   
-  .menu-link {
+  .menu__link {
     font-family:  var(--primary-font);
     font-weight: 500;
     line-height: 1.14;
@@ -141,6 +160,8 @@
    fill: var(--secondary-text-color-theme-light);
    }
   }
+
+
   
   
   

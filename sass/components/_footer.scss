@@ -23,10 +23,14 @@
   
   
   .footer-logo {
-    color: var(--primary-text-color);
+    
     margin-bottom: 20px;
     margin-right: 0;
     display: block;
+  }
+
+  .logo_color_light {
+    color: var(--primary-text-color);
   }
   
   
@@ -45,7 +49,7 @@
   color: var(--primary-text-color);
   }
   
-  .maps-contact-phone:not(:last-child) {
+  .contact-link__maps-contact-phone:not(:last-child) {
     margin-bottom: 9px;
   }
   
