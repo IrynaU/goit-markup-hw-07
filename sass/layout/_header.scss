@@ -54,7 +54,7 @@
     fill: currentColor;
   }
   
-  .contact-maill-menu {
+  .menu-contact-item {
     display: flex; 
     justify-content: center; 
     align-items: center; 
@@ -67,7 +67,7 @@
   }
   
   
-  .menu {
+  .menu-list {
     display: flex;
     align-items: center;
   }
@@ -82,11 +82,11 @@
   
   
   
-  .menu__item:not(:last-child) {
+  .menu-list__item:not(:last-child) {
     margin-right: 50px;
   }
   
-  .menu__link {
+  .menu-list__link {
     font-family:  var(--primary-font);
     font-weight: 500;
     line-height: 1.14;

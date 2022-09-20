@@ -1,4 +1,4 @@
-.text-container {
+.project-list_project-item {
     background-color: var(--primary-text-color);
     border: 1px solid #EEEEEE;
     width: calc((100% - 60px) / 3);
@@ -50,8 +50,13 @@
   color: var(--secondary-text-color); 
   }
   
-  .text-container-title {
+  .project-item-container {
     text-decoration: none;
+
+    &:hover .overlay,
+    &:focus .overlay {
+      transform: translateY(0%)
+    }
   }
   
   
@@ -62,7 +67,7 @@
   color: var(--primary-text-color-theme-light);
   }
   
-  .overlay-picture {
+  .project-overlay-picture {
     position: relative;
     overflow: hidden;
   }
@@ -87,7 +92,4 @@
     transition: transform 250ms linear;
   }
   
-  .text-container-title:hover .overlay,
-  .text-container-title:focus .overlay {
-    transform: translateY(0%)
-  }
+ 

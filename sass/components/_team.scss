@@ -22,7 +22,7 @@
   
  
   
-  .team-section-title {
+  .team-item_team-list {
     background-color: var(--primary-text-color);
     width: 270px;
     height: 428px;
@@ -55,3 +55,8 @@
     color: var(--primary-text-color-theme-light);
     margin-bottom: 16px;
     }
+
+    .team-item {
+      display: flex;
+      align-items: center;
+    } 
